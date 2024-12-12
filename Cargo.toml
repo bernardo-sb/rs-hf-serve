@@ -1,0 +1,17 @@
+[package]
+name = "rs-hf-serve"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.41", features = ["full"] }
+actix-web = "4.9"
+futures = "0.3"
+hf-hub = { version = "0.3.2", features = ["tokio"] }
+candle-core = "0.8.0"
+candle-nn = "0.8.0"
+candle-transformers = "0.8.0"
+anyhow = "1.0.93"
+tokenizers = "0.20.3"
+serde_json = "1.0.133"
+serde = "1.0.215"
